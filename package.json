@@ -1,0 +1,13 @@
+{
+  "name": "@local/base",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "applications/*",
+    "development/*"
+  ],
+  "scripts": {
+    "dev:registry:start": "npm run start -w=development/registry"
+  }
+}

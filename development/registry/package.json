@@ -1,0 +1,13 @@
+{
+  "name": "@local/registry",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "verdaccio --config ./config.yaml"
+  },
+  "devDependencies": {
+    "verdaccio": "^6.2.4"
+  }
+}
