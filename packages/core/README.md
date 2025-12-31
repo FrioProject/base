@@ -55,13 +55,19 @@ console.log(colors.ice);
 
 `@frio/core` is distributed in multiple formats to fit any workflow:
 
+- **CSS**: `@import "@frio/core/dist/frio.css";`
+- **ESM**: `import colors from "@frio/core";`
+- **CommonJS**: `const { colors } = from "@frio/core";`
+- **JSON**: `import colors from "@frio/core/tokens.json" with { type: 'json' };`
+- **TypeScript**: `/// <reference path="@frio/core/frio.d.ts" />`
+
 | Format | Path               | Usage                              |
 | ------ | ------------------ | ---------------------------------- |
 | CSS    | `dist/frio.css`    | Standard Web/Native CSS            |
 | ESM    | `dist/frio.mjs`    | Modern JS Bundlers (Vite, Webpack) |
 | CJS    | `dist/frio.js`     | Legacy Node.js                     |
-| Types  | `dist/frio.d.ts`   | TypeScript Intellisense            |
 | DTCG   | `dist/tokens.json` | Design Tokens JSON                 |
+| Types  | `dist/frio.d.ts`   | TypeScript Intellisense            |
 
 ---
 
