@@ -8,6 +8,8 @@
     "development/*"
   ],
   "scripts": {
-    "dev:registry:start": "npm run start -w=development/registry"
+    "list:workspaces": "npm ls --workspaces --depth=0",
+    "dev:registry:start": "npm run start -w=development/registry",
+    "dev:core:build": "npm run build -w=packages/core"
   }
 }

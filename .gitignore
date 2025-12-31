@@ -216,3 +216,8 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/node,linux,windows,macos
+
+# Workspace Specifics
+development/registry/storage/
+development/registry/htpasswd
+development/registry/logs/

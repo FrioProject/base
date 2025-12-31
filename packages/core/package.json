@@ -2,11 +2,28 @@
   "name": "@frio/core",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.css",
-  "style": "src/index.css",
+  "type": "module",
+  "main": "./dist/frio.js",
+  "module": "./dist/frio.mjs",
+  "types": "./dist/frio.d.ts",
+  "style": "./dist/frio.css",
   "exports": {
-    ".": "./src/index.css",
-    "./colors": "./src/colors.css",
-    "./spacing": "./src/spacing.css"
+    ".": {
+      "types": "./dist/frio.d.ts",
+      "import": "./dist/frio.mjs",
+      "require": "./dist/frio.js",
+      "style": "./dist/frio.css"
+    },
+    "./tokens": "./dist/tokens.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "node build.js"
+  },
+  "devDependencies": {
+    "@tokens-studio/types": "^0.5.2",
+    "style-dictionary": "^5.1.1"
   }
 }
