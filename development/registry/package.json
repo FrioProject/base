@@ -9,5 +9,8 @@
   },
   "devDependencies": {
     "verdaccio": "^6.2.4"
-  }
+  },
+	"volta": {
+	  "extends": "../../package.json"
+	}
 }

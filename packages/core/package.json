@@ -11,19 +11,23 @@
     ".": {
       "types": "./dist/frio.d.ts",
       "import": "./dist/frio.mjs",
-      "require": "./dist/frio.js",
-      "style": "./dist/frio.css"
+      "require": "./dist/frio.js"
     },
+    "./css/*": "./dist/css/*.css",
     "./tokens": "./dist/tokens.json"
   },
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "node build.js"
+    "build": "node build.js",
+    "start": "node build.js --watch"
   },
   "devDependencies": {
     "@tokens-studio/types": "^0.5.2",
     "style-dictionary": "^5.1.1"
+  },
+  "volta": {
+    "extends": "../../package.json"
   }
 }

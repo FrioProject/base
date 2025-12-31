@@ -1,16 +1,18 @@
 import StyleDictionary from "style-dictionary";
+import { watch } from "node:fs";
 
-const tokens = new StyleDictionary({
+const tokensConfig = {
   source: ["src/tokens/**/*.json"],
   preprocessors: ["tokens-studio/preprocess"],
   platforms: {
     css: {
       transformGroup: "css",
-      buildPath: "dist/",
+      buildPath: "dist/css/",
       files: [
         {
           destination: "frio.css",
           format: "css/variables",
+          filter: (token) => token.path[0] === "color",
           options: {
             outputReferences: true,
             outputReferencesAsVariables: true,
@@ -56,6 +58,29 @@ const tokens = new StyleDictionary({
       ],
     },
   },
-});
+};
 
-await tokens.buildAllPlatforms();
+async function build() {
+  console.log("❄️ Frio: Building design tokens...");
+
+  try {
+    await new StyleDictionary(tokensConfig).buildAllPlatforms();
+
+    console.log("✅ Frio: Design tokens built successfully!");
+  } catch (error) {
+    console.error("❌ Frio: Error building design tokens:", error);
+    process.exit(1);
+  }
+}
+
+await build();
+
+if (process.argv.includes("--watch")) {
+  console.log("👀 Frio: Watching for changes...");
+
+  watch("src/tokens", { recursive: true }, async (_eventType, filename) => {
+    console.log(`🔍 Frio: Detected changes in ${filename}.`);
+    console.log("🔄 Frio: Rebuilding...");
+    await build();
+  });
+}

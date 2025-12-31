@@ -8,8 +8,17 @@
     "development/*"
   ],
   "scripts": {
-    "list:workspaces": "npm ls --workspaces --depth=0",
-    "dev:registry:start": "npm run start -w=development/registry",
-    "pak:core:build": "npm run build -w=packages/core"
+    "base:list-workspaces": "npm ls --workspaces --depth=0",
+    "base:start": "concurrently \"npm run pak:core:start\" \"npm run app:website:start\"",
+    "dev:registry:start": "npm run start -w @local/registry",
+    "app:website:start": "npm run start -w @local/website",
+    "pak:core:build": "npm run build -w @frio/core",
+    "pak:core:start": "npm run start -w @frio/core"
+  },
+  "volta": {
+    "node": "24.12.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
   }
 }
