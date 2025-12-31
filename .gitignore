@@ -221,3 +221,6 @@ $RECYCLE.BIN/
 development/registry/storage/
 development/registry/htpasswd
 development/registry/logs/
+
+# Verdaccio database
+development/registry/.verdaccio-db
