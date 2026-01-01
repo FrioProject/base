@@ -10,7 +10,7 @@ const tokensConfig = {
       buildPath: "dist/css/",
       files: [
         {
-          destination: "frio.css",
+          destination: "colors.css",
           format: "css/variables",
           filter: (token) => token.path[0] === "color",
           options: {
