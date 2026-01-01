@@ -4,43 +4,59 @@
       "$type": "color",
       "$value": "#e9f2ff"
     },
-    "blue-100-dark": {
-      "$type": "color",
-      "$value": "#1c2b41"
-    },
     "blue-200-light": {
       "$type": "color",
       "$value": "#cce0ff"
-    },
-    "blue-200-dark": {
-      "$type": "color",
-      "$value": "#09326c"
     },
     "blue-300-light": {
       "$type": "color",
       "$value": "#85b8ff"
     },
-    "blue-300-dark": {
-      "$type": "color",
-      "$value": "#0055cc"
-    },
     "blue-400-light": {
       "$type": "color",
       "$value": "#579dff"
-    },
-    "blue-400-dark": {
-      "$type": "color",
-      "$value": "#0c66e4"
     },
     "blue-500-light": {
       "$type": "color",
       "$value": "#388bff"
     },
-    "blue-500-dark": {
+    "blue-600-light": {
       "$type": "color",
       "$value": "#1d7afc"
     },
-    "blue-600-light": {
+    "blue-700-light": {
+      "$type": "color",
+      "$value": "#0c66e4"
+    },
+    "blue-800-light": {
+      "$type": "color",
+      "$value": "#0055cc"
+    },
+    "blue-900-light": {
+      "$type": "color",
+      "$value": "#09326c"
+    },
+    "blue-1000-light": {
+      "$type": "color",
+      "$value": "#1c2b41"
+    },
+    "blue-100-dark": {
+      "$type": "color",
+      "$value": "#1c2b41"
+    },
+    "blue-200-dark": {
+      "$type": "color",
+      "$value": "#09326c"
+    },
+    "blue-300-dark": {
+      "$type": "color",
+      "$value": "#0055cc"
+    },
+    "blue-400-dark": {
+      "$type": "color",
+      "$value": "#0c66e4"
+    },
+    "blue-500-dark": {
       "$type": "color",
       "$value": "#1d7afc"
     },
@@ -48,33 +64,17 @@
       "$type": "color",
       "$value": "#388bff"
     },
-    "blue-700-light": {
-      "$type": "color",
-      "$value": "#0c66e4"
-    },
     "blue-700-dark": {
       "$type": "color",
       "$value": "#579dff"
-    },
-    "blue-800-light": {
-      "$type": "color",
-      "$value": "#0055cc"
     },
     "blue-800-dark": {
       "$type": "color",
       "$value": "#85b8ff"
     },
-    "blue-900-light": {
-      "$type": "color",
-      "$value": "#09326c"
-    },
     "blue-900-dark": {
       "$type": "color",
       "$value": "#cce0ff"
-    },
-    "blue-1000-light": {
-      "$type": "color",
-      "$value": "#1c2b41"
     },
     "blue-1000-dark": {
       "$type": "color",
