@@ -8,10 +8,6 @@
       "$type": "color",
       "$value": "#1c2b41"
     },
-    ".blue-100": {
-      "$type": "color",
-      "$value": "light-dark({color.blue-100-light}, {color.blue-100-dark})"
-    },
     "blue-200-light": {
       "$type": "color",
       "$value": "#cce0ff"
@@ -19,10 +15,6 @@
     "blue-200-dark": {
       "$type": "color",
       "$value": "#09326c"
-    },
-    ".blue-200": {
-      "$type": "color",
-      "$value": "light-dark({color.blue-200-light}, {color.blue-200-dark})"
     },
     "blue-300-light": {
       "$type": "color",
@@ -32,10 +24,6 @@
       "$type": "color",
       "$value": "#0055cc"
     },
-    ".blue-300": {
-      "$type": "color",
-      "$value": "light-dark({color.blue-300-light}, {color.blue-300-dark})"
-    },
     "blue-400-light": {
       "$type": "color",
       "$value": "#579dff"
@@ -43,10 +31,6 @@
     "blue-400-dark": {
       "$type": "color",
       "$value": "#0c66e4"
-    },
-    ".blue-400": {
-      "$type": "color",
-      "$value": "light-dark({color.blue-400-light}, {color.blue-400-dark})"
     },
     "blue-500-light": {
       "$type": "color",
@@ -56,10 +40,6 @@
       "$type": "color",
       "$value": "#1d7afc"
     },
-    ".blue-500": {
-      "$type": "color",
-      "$value": "light-dark({color.blue-500-light}, {color.blue-500-dark})"
-    },
     "blue-600-light": {
       "$type": "color",
       "$value": "#1d7afc"
@@ -67,10 +47,6 @@
     "blue-600-dark": {
       "$type": "color",
       "$value": "#388bff"
-    },
-    ".blue-600": {
-      "$type": "color",
-      "$value": "light-dark({color.blue-600-light}, {color.blue-600-dark})"
     },
     "blue-700-light": {
       "$type": "color",
@@ -80,10 +56,6 @@
       "$type": "color",
       "$value": "#579dff"
     },
-    ".blue-700": {
-      "$type": "color",
-      "$value": "light-dark({color.blue-700-light}, {color.blue-700-dark})"
-    },
     "blue-800-light": {
       "$type": "color",
       "$value": "#0055cc"
@@ -91,10 +63,6 @@
     "blue-800-dark": {
       "$type": "color",
       "$value": "#85b8ff"
-    },
-    ".blue-800": {
-      "$type": "color",
-      "$value": "light-dark({color.blue-800-light}, {color.blue-800-dark})"
     },
     "blue-900-light": {
       "$type": "color",
@@ -104,10 +72,6 @@
       "$type": "color",
       "$value": "#cce0ff"
     },
-    ".blue-900": {
-      "$type": "color",
-      "$value": "light-dark({color.blue-900-light}, {color.blue-900-dark})"
-    },
     "blue-1000-light": {
       "$type": "color",
       "$value": "#1c2b41"
@@ -115,6 +79,42 @@
     "blue-1000-dark": {
       "$type": "color",
       "$value": "#e9f2ff"
+    },
+    ".blue-100": {
+      "$type": "color",
+      "$value": "light-dark({color.blue-100-light}, {color.blue-100-dark})"
+    },
+    ".blue-200": {
+      "$type": "color",
+      "$value": "light-dark({color.blue-200-light}, {color.blue-200-dark})"
+    },
+    ".blue-300": {
+      "$type": "color",
+      "$value": "light-dark({color.blue-300-light}, {color.blue-300-dark})"
+    },
+    ".blue-400": {
+      "$type": "color",
+      "$value": "light-dark({color.blue-400-light}, {color.blue-400-dark})"
+    },
+    ".blue-500": {
+      "$type": "color",
+      "$value": "light-dark({color.blue-500-light}, {color.blue-500-dark})"
+    },
+    ".blue-600": {
+      "$type": "color",
+      "$value": "light-dark({color.blue-600-light}, {color.blue-600-dark})"
+    },
+    ".blue-700": {
+      "$type": "color",
+      "$value": "light-dark({color.blue-700-light}, {color.blue-700-dark})"
+    },
+    ".blue-800": {
+      "$type": "color",
+      "$value": "light-dark({color.blue-800-light}, {color.blue-800-dark})"
+    },
+    ".blue-900": {
+      "$type": "color",
+      "$value": "light-dark({color.blue-900-light}, {color.blue-900-dark})"
     },
     ".blue-1000": {
       "$type": "color",
