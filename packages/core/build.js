@@ -4,7 +4,6 @@ import { watch } from "node:fs";
 const tokensConfig = {
   source: ["src/tokens/**/*.json"],
   preprocessors: ["tokens-studio/preprocess"],
-  caches: false,
   platforms: {
     css: {
       transformGroup: "css",
