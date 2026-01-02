@@ -1,124 +1,126 @@
 {
   "color": {
-    "orange-100-light": {
-      "$type": "color",
-      "$value": "#fff3eb"
-    },
-    "orange-200-light": {
-      "$type": "color",
-      "$value": "#fedec8"
-    },
-    "orange-300-light": {
-      "$type": "color",
-      "$value": "#fec195"
-    },
-    "orange-400-light": {
-      "$type": "color",
-      "$value": "#fea362"
-    },
-    "orange-500-light": {
-      "$type": "color",
-      "$value": "#f38a3f"
-    },
-    "orange-600-light": {
-      "$type": "color",
-      "$value": "#e56910"
-    },
-    "orange-700-light": {
-      "$type": "color",
-      "$value": "#c25100"
-    },
-    "orange-800-light": {
-      "$type": "color",
-      "$value": "#a54800"
-    },
-    "orange-900-light": {
-      "$type": "color",
-      "$value": "#702e00"
-    },
-    "orange-1000-light": {
-      "$type": "color",
-      "$value": "#38291e"
-    },
-    "orange-100-dark": {
-      "$type": "color",
-      "$value": "#38291e"
-    },
-    "orange-200-dark": {
-      "$type": "color",
-      "$value": "#702e00"
-    },
-    "orange-300-dark": {
-      "$type": "color",
-      "$value": "#a54800"
-    },
-    "orange-400-dark": {
-      "$type": "color",
-      "$value": "#c25100"
-    },
-    "orange-500-dark": {
-      "$type": "color",
-      "$value": "#e56910"
-    },
-    "orange-600-dark": {
-      "$type": "color",
-      "$value": "#f38a3f"
-    },
-    "orange-700-dark": {
-      "$type": "color",
-      "$value": "#fea362"
-    },
-    "orange-800-dark": {
-      "$type": "color",
-      "$value": "#fec195"
-    },
-    "orange-900-dark": {
-      "$type": "color",
-      "$value": "#fedec8"
-    },
-    "orange-1000-dark": {
-      "$type": "color",
-      "$value": "#fff3eb"
-    },
-    ".orange-100": {
-      "$type": "color",
-      "$value": "light-dark({color.orange-100-light}, {color.orange-100-dark})"
-    },
-    ".orange-200": {
-      "$type": "color",
-      "$value": "light-dark({color.orange-200-light}, {color.orange-200-dark})"
-    },
-    ".orange-300": {
-      "$type": "color",
-      "$value": "light-dark({color.orange-300-light}, {color.orange-300-dark})"
-    },
-    ".orange-400": {
-      "$type": "color",
-      "$value": "light-dark({color.orange-400-light}, {color.orange-400-dark})"
-    },
-    ".orange-500": {
-      "$type": "color",
-      "$value": "light-dark({color.orange-500-light}, {color.orange-500-dark})"
-    },
-    ".orange-600": {
-      "$type": "color",
-      "$value": "light-dark({color.orange-600-light}, {color.orange-600-dark})"
-    },
-    ".orange-700": {
-      "$type": "color",
-      "$value": "light-dark({color.orange-700-light}, {color.orange-700-dark})"
-    },
-    ".orange-800": {
-      "$type": "color",
-      "$value": "light-dark({color.orange-800-light}, {color.orange-800-dark})"
-    },
-    ".orange-900": {
-      "$type": "color",
-      "$value": "light-dark({color.orange-900-light}, {color.orange-900-dark})"
-    },
-    ".orange-1000": {
-      "$type": "color",
-      "$value": "light-dark({color.orange-1000-light}, {color.orange-1000-dark})"
+    "orange": {
+      "100-light": {
+        "$type": "color",
+        "$value": "#fff3eb"
+      },
+      "200-light": {
+        "$type": "color",
+        "$value": "#fedec8"
+      },
+      "300-light": {
+        "$type": "color",
+        "$value": "#fec195"
+      },
+      "400-light": {
+        "$type": "color",
+        "$value": "#fea362"
+      },
+      "500-light": {
+        "$type": "color",
+        "$value": "#f38a3f"
+      },
+      "600-light": {
+        "$type": "color",
+        "$value": "#e56910"
+      },
+      "700-light": {
+        "$type": "color",
+        "$value": "#c25100"
+      },
+      "800-light": {
+        "$type": "color",
+        "$value": "#a54800"
+      },
+      "900-light": {
+        "$type": "color",
+        "$value": "#702e00"
+      },
+      "1000-light": {
+        "$type": "color",
+        "$value": "#38291e"
+      },
+      "100-dark": {
+        "$type": "color",
+        "$value": "#38291e"
+      },
+      "200-dark": {
+        "$type": "color",
+        "$value": "#702e00"
+      },
+      "300-dark": {
+        "$type": "color",
+        "$value": "#a54800"
+      },
+      "400-dark": {
+        "$type": "color",
+        "$value": "#c25100"
+      },
+      "500-dark": {
+        "$type": "color",
+        "$value": "#e56910"
+      },
+      "600-dark": {
+        "$type": "color",
+        "$value": "#f38a3f"
+      },
+      "700-dark": {
+        "$type": "color",
+        "$value": "#fea362"
+      },
+      "800-dark": {
+        "$type": "color",
+        "$value": "#fec195"
+      },
+      "900-dark": {
+        "$type": "color",
+        "$value": "#fedec8"
+      },
+      "1000-dark": {
+        "$type": "color",
+        "$value": "#fff3eb"
+      },
+      ".100": {
+        "$type": "color",
+        "$value": "light-dark({color.orange.100-light}, {color.orange.100-dark})"
+      },
+      ".200": {
+        "$type": "color",
+        "$value": "light-dark({color.orange.200-light}, {color.orange.200-dark})"
+      },
+      ".300": {
+        "$type": "color",
+        "$value": "light-dark({color.orange.300-light}, {color.orange.300-dark})"
+      },
+      ".400": {
+        "$type": "color",
+        "$value": "light-dark({color.orange.400-light}, {color.orange.400-dark})"
+      },
+      ".500": {
+        "$type": "color",
+        "$value": "light-dark({color.orange.500-light}, {color.orange.500-dark})"
+      },
+      ".600": {
+        "$type": "color",
+        "$value": "light-dark({color.orange.600-light}, {color.orange.600-dark})"
+      },
+      ".700": {
+        "$type": "color",
+        "$value": "light-dark({color.orange.700-light}, {color.orange.700-dark})"
+      },
+      ".800": {
+        "$type": "color",
+        "$value": "light-dark({color.orange.800-light}, {color.orange.800-dark})"
+      },
+      ".900": {
+        "$type": "color",
+        "$value": "light-dark({color.orange.900-light}, {color.orange.900-dark})"
+      },
+      ".1000": {
+        "$type": "color",
+        "$value": "light-dark({color.orange.1000-light}, {color.orange.1000-dark})"
+      }
     }
   }
 }
