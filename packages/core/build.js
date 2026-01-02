@@ -4,6 +4,7 @@ import { watch } from "node:fs";
 const tokensConfig = {
   source: ["src/tokens/**/*.json"],
   preprocessors: ["tokens-studio/preprocess"],
+  caches: false,
   platforms: {
     css: {
       transformGroup: "css",
@@ -46,25 +47,31 @@ const tokensConfig = {
     },
     json: {
       transformGroup: "js",
+      buildPath: "src/tokens/",
       files: [
         {
-          buildPath: "dist/",
           destination: "tokens.json",
           format: "json",
-          options: {
-            outputReferences: true,
-          },
-        },
-        {
-          buildPath: "src/tokens/",
-          destination: "tokens.json",
-          format: "json",
+          filter: (token) => !token["internal"],
           options: {
             outputReferences: true,
           },
         },
       ],
     },
+    // json: {
+    //   transformGroup: "js",
+    //   buildPath: "dist/",
+    //   files: [
+    //     {
+    //       destination: "tokens.json",
+    //       format: "json",
+    //       options: {
+    //         outputReferences: true,
+    //       },
+    //     },
+    //   ],
+    // },
   },
 };
 

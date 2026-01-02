@@ -81,45 +81,55 @@
         "$type": "color",
         "$value": "#ffeceb"
       },
-      ".100": {
+      "100": {
         "$type": "color",
-        "$value": "light-dark({color.red.100-light}, {color.red.100-dark})"
+        "$value": "light-dark({color.red.100-light}, {color.red.100-dark})",
+        "internal": true
       },
-      ".200": {
+      "200": {
         "$type": "color",
-        "$value": "light-dark({color.red.200-light}, {color.red.200-dark})"
+        "$value": "light-dark({color.red.200-light}, {color.red.200-dark})",
+        "internal": true
       },
-      ".300": {
+      "300": {
         "$type": "color",
-        "$value": "light-dark({color.red.300-light}, {color.red.300-dark})"
+        "$value": "light-dark({color.red.300-light}, {color.red.300-dark})",
+        "internal": true
       },
-      ".400": {
+      "400": {
         "$type": "color",
-        "$value": "light-dark({color.red.400-light}, {color.red.400-dark})"
+        "$value": "light-dark({color.red.400-light}, {color.red.400-dark})",
+        "internal": true
       },
-      ".500": {
+      "500": {
         "$type": "color",
-        "$value": "light-dark({color.red.500-light}, {color.red.500-dark})"
+        "$value": "light-dark({color.red.500-light}, {color.red.500-dark})",
+        "internal": true
       },
-      ".600": {
+      "600": {
         "$type": "color",
-        "$value": "light-dark({color.red.600-light}, {color.red.600-dark})"
+        "$value": "light-dark({color.red.600-light}, {color.red.600-dark})",
+        "internal": true
       },
-      ".700": {
+      "700": {
         "$type": "color",
-        "$value": "light-dark({color.red.700-light}, {color.red.700-dark})"
+        "$value": "light-dark({color.red.700-light}, {color.red.700-dark})",
+        "internal": true
       },
-      ".800": {
+      "800": {
         "$type": "color",
-        "$value": "light-dark({color.red.800-light}, {color.red.800-dark})"
+        "$value": "light-dark({color.red.800-light}, {color.red.800-dark})",
+        "internal": true
       },
-      ".900": {
+      "900": {
         "$type": "color",
-        "$value": "light-dark({color.red.900-light}, {color.red.900-dark})"
+        "$value": "light-dark({color.red.900-light}, {color.red.900-dark})",
+        "internal": true
       },
-      ".1000": {
+      "1000": {
         "$type": "color",
-        "$value": "light-dark({color.red.1000-light}, {color.red.1000-dark})"
+        "$value": "light-dark({color.red.1000-light}, {color.red.1000-dark})",
+        "internal": true
       }
     }
   }
