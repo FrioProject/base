@@ -33,19 +33,19 @@
 
   <menu>
     <li>
-      <button type="button" aria-pressed={theme === 'light'} onclick={() => setTheme('light')}
-        >Light</button
-      >
+      <button type="button" aria-pressed={theme === 'light'} onclick={() => setTheme('light')}>
+        Light
+      </button>
     </li>
     <li>
-      <button type="button" aria-pressed={theme === 'dark'} onclick={() => setTheme('dark')}
-        >Dark</button
-      >
+      <button type="button" aria-pressed={theme === 'dark'} onclick={() => setTheme('dark')}>
+        Dark
+      </button>
     </li>
     <li>
-      <button type="button" aria-pressed={theme === 'system'} onclick={() => setTheme('system')}
-        >System</button
-      >
+      <button type="button" aria-pressed={theme === 'system'} onclick={() => setTheme('system')}>
+        System
+      </button>
     </li>
   </menu>
 </main>
@@ -55,16 +55,16 @@
 
   :where(:root) {
     color-scheme: dark light;
-    accent-color: var(--color-blue);
+    accent-color: var(--color-blue-700);
     background-color: var(--color-blue-100);
   }
 
   :where(:link) {
-    color: var(--color-blue);
+    color: var(--color-blue-700);
   }
 
   :where(h1) {
-    color: var(--color-blue);
+    color: var(--color-blue-700);
   }
 
   :where(menu) {
@@ -75,13 +75,19 @@
 
     :where(li) {
       display: contents;
+
+      &:not(:first-child) {
+        :where(button) {
+          border-left: none;
+        }
+      }
     }
 
     :where(button) {
       appearance: none;
       padding: 0.5rem 1rem;
       background-color: var(--color-blue-100);
-      border: 1px solid var(--color-blue);
+      border: 1px solid var(--color-blue-700);
       border-radius: 0;
       cursor: pointer;
 

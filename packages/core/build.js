@@ -46,9 +46,17 @@ const tokensConfig = {
     },
     json: {
       transformGroup: "js",
-      buildPath: "dist/",
       files: [
         {
+          buildPath: "dist/",
+          destination: "tokens.json",
+          format: "json",
+          options: {
+            outputReferences: true,
+          },
+        },
+        {
+          buildPath: "src/tokens/",
           destination: "tokens.json",
           format: "json",
           options: {
