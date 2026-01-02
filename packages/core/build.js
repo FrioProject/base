@@ -47,10 +47,16 @@ const tokensConfig = {
     },
     json: {
       transformGroup: "js",
-      buildPath: "src/tokens/",
       files: [
         {
-          destination: "tokens.json",
+          destination: "dist/tokens.json",
+          format: "json",
+          options: {
+            outputReferences: true,
+          },
+        },
+        {
+          destination: "src/tokens/tokens.json",
           format: "json",
           filter: (token) => !token["internal"],
           options: {
@@ -59,19 +65,6 @@ const tokensConfig = {
         },
       ],
     },
-    // json: {
-    //   transformGroup: "js",
-    //   buildPath: "dist/",
-    //   files: [
-    //     {
-    //       destination: "tokens.json",
-    //       format: "json",
-    //       options: {
-    //         outputReferences: true,
-    //       },
-    //     },
-    //   ],
-    // },
   },
 };
 

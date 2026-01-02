@@ -14,7 +14,7 @@
       "require": "./dist/frio.js"
     },
     "./css/*": "./dist/css/*.css",
-    "./tokens": "./src/tokens/tokens.json"
+    "./tokens": "./dist/tokens.json"
   },
   "files": [
     "dist"
