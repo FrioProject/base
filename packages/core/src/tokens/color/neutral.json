@@ -3,83 +3,83 @@
     "neutral": {
       "100-light": {
         "$type": "color",
-        "$value": "#f7f8f9"
+        "$value": "#c7d1db"
       },
       "200-light": {
         "$type": "color",
-        "$value": "#f1f2f4"
+        "$value": "#b6c2cf"
       },
       "300-light": {
         "$type": "color",
-        "$value": "#dcdfe4"
+        "$value": "#9fadbc"
       },
       "400-light": {
         "$type": "color",
-        "$value": "#b3b9c4"
+        "$value": "#8c9bab"
       },
       "500-light": {
         "$type": "color",
-        "$value": "#8590a2"
+        "$value": "#738496"
       },
       "600-light": {
         "$type": "color",
-        "$value": "#758195"
+        "$value": "#596773"
       },
       "700-light": {
         "$type": "color",
-        "$value": "#626f86"
+        "$value": "#454f59"
       },
       "800-light": {
         "$type": "color",
-        "$value": "#44546f"
+        "$value": "#2c333a"
       },
       "900-light": {
         "$type": "color",
-        "$value": "#2c3e5d"
+        "$value": "#22272b"
       },
       "1000-light": {
         "$type": "color",
-        "$value": "#172b4d"
+        "$value": "#1d2125"
       },
       "100-dark": {
         "$type": "color",
-        "$value": "#172b4d"
+        "$value": "#1d2125"
       },
       "200-dark": {
         "$type": "color",
-        "$value": "#2c3e5d"
+        "$value": "#22272b"
       },
       "300-dark": {
         "$type": "color",
-        "$value": "#44546f"
+        "$value": "#2c333a"
       },
       "400-dark": {
         "$type": "color",
-        "$value": "#626f86"
+        "$value": "#454f59"
       },
       "500-dark": {
         "$type": "color",
-        "$value": "#758195"
+        "$value": "#596773"
       },
       "600-dark": {
         "$type": "color",
-        "$value": "#8590a2"
+        "$value": "#738496"
       },
       "700-dark": {
         "$type": "color",
-        "$value": "#b3b9c4"
+        "$value": "#8c9bab"
       },
       "800-dark": {
         "$type": "color",
-        "$value": "#dcdfe4"
+        "$value": "#9fadbc"
       },
       "900-dark": {
         "$type": "color",
-        "$value": "#f1f2f4"
+        "$value": "#b6c2cf"
       },
       "1000-dark": {
         "$type": "color",
-        "$value": "#f7f8f9"
+        "$value": "#c7d1db"
       },
       "100": {
         "$type": "color",
