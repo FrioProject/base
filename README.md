@@ -12,62 +12,63 @@ Frio is built around the idea of isolated packages and applications that can be 
 
 The repository uses NPM workspaces to define the following primary areas:
 
-| Workspace              | Location               | Purpose                                                                                                                                            |
-| ---------------------- | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `applications/website` | `applications/website` | Frontend SvelteKit application. Contains UI components, routes, and build configuration.                                                           |
-| `development/registry` | `development/registry` | Development registry server with configuration and storage for private packages. Useful for local testing of packages in a controlled environment. |
-| `packages/core`        | `packages/core`        | Shared core utilities and design tokens consumed by other workspaces. Includes build scripts and type definitions.                                 |
+| Workspace         | Location               | Purpose                                                                                                                                            |
+| ----------------- | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `@local/base`     | `./`                   | Root workspace                                                                                                                                     |
+| `@local/website`  | `applications/website` | Frontend SvelteKit application. Contains UI components, routes, and build configuration.                                                           |
+| `@local/registry` | `development/registry` | Development registry server with configuration and storage for private packages. Useful for local testing of packages in a controlled environment. |
+| `@frio/core`      | `packages/core`        | Shared core utilities and design tokens consumed by other workspaces. Includes build scripts and type definitions.                                 |
 
-Additional nested workspaces may appear under `@frio` in the registry storage path or other future packages.
+> [!TIP] Packages
+> All publishable packages are under the `@frio` namespace
+> All non-publishable package are under the `@local` namespace
 
 ---
 
 ## 🛠 Developing Workspaces
 
-Each workspace has its own package.json and may define custom scripts. Here's how to get started:
+All scripts can be run in the root of the project. The NPM commands are formatted as follows `WORKSPACE:PROJECT:COMMAND`. Where `WORKSPACE` is corresponds to the aforementioned workspaces.
 
-1. **Install dependencies**
+| Workspace Folder | Script |
+| ---------------- | ------ |
+| `.`              | `base` |
+| `applications/`  | `app`  |
+| `development/`   | `dev`  |
+| `packages/`      | `pak`  |
 
-   ```bash
-   npm install
-   ```
+| Project    | Script |
+| ---------- | ------ |
+| `registry` | `reg`  |
+| `website`  | `web`  |
+| `core`     | `cor`  |
 
-   Running this at the root will install dependencies across all workspaces.
+| Script            | Description                                                                                    |
+| ----------------- | ---------------------------------------------------------------------------------------------- |
+| `list-workspaces` | Lists the NPM workspaces. Used only with `base` workspace script                               |
+| `start`           | Starts the project. When run with `base` will run several scripts concurrently for development |
+| `build`           | Builds the project.                                                                            |
 
-2. **Developing the Website**
+> [!NOTE] Example
+> Running `npm run base:start` will run the script `start` in the base `./` project (`@local/base`).
+> Running `npm run app:web:build` will run the script `build` in the website `./applications/website` project (`@local/website`)
 
-   ```bash
-   cd applications/website
-   npm run dev
-   ```
+### Listing workspaces
 
-   Starts the SvelteKit development server with hot module reloading. Edit components under `src/lib/components` or pages under `src/routes`.
+Running `npm run base:list-workspaces` from the root will list all of the registered NPM workspaces.
 
-3. **Working on Core Packages**
+### Working with workspaces
 
-   ```bash
-   cd packages/core
-   npm run build
-   ```
+#### Applications
 
-   Compile the shared utilities or tokens. You can also run tests or linting depending on scripts defined in that package.
+The applications folder is for all applications that are a part of this project. For now, this includes the `website` application. This is the main website for the Frio Project. Other applications will include in the future, a theme builder application.
 
-4. **Using the Registry**
+#### Development (Deprecated)
 
-   ```bash
-   cd development/registry
-   npm run start
-   ```
+The development folder was the location for using development-only tools like Verdaccio. This is no longer needed and will be removed.
 
-   Launches a local npm registry for publishing and consuming internal packages during development.
+#### Packages
 
-5. **Adding a New Workspace**
-   - Create a new directory under the appropriate top-level folder (`packages` or `applications`).
-   - Add a `package.json` with a unique name and configure any build or dev scripts.
-   - Add the path to the `workspaces` array in the root `package.json` if not using glob patterns.
-
-6. **Linking Workspaces**
-   NPM automatically symlinks workspace packages when you run `npm install` from the root. Use `npm run build` in a package to regenerate outputs consumed by others.
+The packages folder is where all publishable packages are stored. For now, this includes the `core` package.
 
 ---
 

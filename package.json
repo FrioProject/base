@@ -9,11 +9,11 @@
   ],
   "scripts": {
     "base:list-workspaces": "npm ls --workspaces --depth=0",
-    "base:start": "concurrently \"npm run pak:core:start\" \"npm run app:website:start\"",
-    "dev:registry:start": "npm run start -w @local/registry",
-    "app:website:start": "npm run start -w @local/website",
-    "pak:core:build": "npm run build -w @frio/core",
-    "pak:core:start": "npm run start -w @frio/core"
+    "base:start": "concurrently \"npm run pak:cor:start\" \"npm run app:web:start\"",
+    "dev:reg:start": "npm run start -w @local/registry",
+    "app:web:start": "npm run start -w @local/website",
+    "pak:cor:build": "npm run build -w @frio/core",
+    "pak:cor:start": "npm run start -w @frio/core"
   },
   "volta": {
     "node": "24.12.0"
