@@ -19,7 +19,7 @@ The repository uses NPM workspaces to define the following primary areas:
 | `@local/registry` | `development/registry` | Development registry server with configuration and storage for private packages. Useful for local testing of packages in a controlled environment. |
 | `@frio/core`      | `packages/core`        | Shared core utilities and design tokens consumed by other workspaces. Includes build scripts and type definitions.                                 |
 
-> [!TIP] Packages
+> [!TIP]
 > All publishable packages are under the `@frio` namespace
 > All non-publishable package are under the `@local` namespace
 
@@ -48,7 +48,7 @@ All scripts can be run in the root of the project. The NPM commands are formatte
 | `start`           | Starts the project. When run with `base` will run several scripts concurrently for development |
 | `build`           | Builds the project.                                                                            |
 
-> [!NOTE] Example
+> [!NOTE]
 > Running `npm run base:start` will run the script `start` in the base `./` project (`@local/base`).
 > Running `npm run app:web:build` will run the script `build` in the website `./applications/website` project (`@local/website`)
 
