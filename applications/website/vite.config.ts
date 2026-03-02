@@ -1,23 +1,24 @@
 import { defineConfig } from 'vitest/config';
 import { sveltekit } from '@sveltejs/kit/vite';
+import devtoolsJson from 'vite-plugin-devtools-json';
 
 export default defineConfig({
-	plugins: [sveltekit()],
+  plugins: [sveltekit(), devtoolsJson()],
 
-	test: {
-		expect: { requireAssertions: true },
+  test: {
+    expect: { requireAssertions: true },
 
-		projects: [
-			{
-				extends: './vite.config.ts',
+    projects: [
+      {
+        extends: './vite.config.ts',
 
-				test: {
-					name: 'server',
-					environment: 'node',
-					include: ['src/**/*.{test,spec}.{js,ts}'],
-					exclude: ['src/**/*.svelte.{test,spec}.{js,ts}']
-				}
-			}
-		]
-	}
+        test: {
+          name: 'server',
+          environment: 'node',
+          include: ['src/**/*.{test,spec}.{js,ts}'],
+          exclude: ['src/**/*.svelte.{test,spec}.{js,ts}'],
+        },
+      },
+    ],
+  },
 });

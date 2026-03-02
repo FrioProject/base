@@ -1,0 +1,14 @@
+@import '@frio/core/css/colors';
+
+:where(body) {
+  font-family: 'Inter', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+  font-family: 'ADLaM Display', system-ui;
+  font-weight: 400;
+  font-style: normal;
+}

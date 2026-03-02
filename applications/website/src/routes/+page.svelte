@@ -1,62 +1,33 @@
-<script lang="ts">
-  type Theme = 'light' | 'dark' | 'system';
+<script>
+  import Logo from '$lib/assets/Logo.svg';
 
-  let theme: Theme = $state<Theme>('system');
-
-  const setTheme = (newTheme: Theme) => {
-    theme = newTheme;
-
-    const html = document.documentElement;
-
-    switch (theme) {
-      case 'light':
-        html.style.setProperty('color-scheme', 'light');
-        break;
-      case 'dark':
-        html.style.setProperty('color-scheme', 'dark');
-        break;
-      case 'system':
-      default:
-        html.style.setProperty('color-scheme', 'dark light');
-        break;
-    }
-  };
+  import ThemeSwitcher from '$lib/components/theme-switcher/theme-switcher.svelte';
 </script>
 
 <svelte:head>
   <title>The Frio Project</title>
 </svelte:head>
 
-<main>
-  <h1>Welcome to The Frio Project</h1>
-  <p>Visit <a href="https://github.com/FrioProject/base">our repo</a> to read the documentation.</p>
+<header>
+  <h1>
+    <img src={Logo} alt="The Frio Project Logo" />
+  </h1>
+</header>
 
-  <menu>
-    <li>
-      <button type="button" aria-pressed={theme === 'light'} onclick={() => setTheme('light')}>
-        Light
-      </button>
-    </li>
-    <li>
-      <button type="button" aria-pressed={theme === 'dark'} onclick={() => setTheme('dark')}>
-        Dark
-      </button>
-    </li>
-    <li>
-      <button type="button" aria-pressed={theme === 'system'} onclick={() => setTheme('system')}>
-        System
-      </button>
-    </li>
-  </menu>
+<main>
+  <h2>Welcome to The Frio Project</h2>
+  <p>
+    Visit <a href="https://github.com/FrioProject/base" target="_blank">our repo</a> to read the documentation.
+  </p>
+
+  <ThemeSwitcher></ThemeSwitcher>
 </main>
 
 <style>
-  @import '@frio/core/css/colors';
-
   :where(:root) {
     color-scheme: dark light;
     accent-color: var(--color-blue-700);
-    background-color: var(--color-blue-100);
+    background-color: var(--color-neutral-100);
   }
 
   :where(:link) {
@@ -65,35 +36,9 @@
 
   :where(h1) {
     color: var(--color-blue-700);
-  }
 
-  :where(menu) {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-
-    :where(li) {
-      display: contents;
-
-      &:not(:first-child) {
-        :where(button) {
-          border-left: none;
-        }
-      }
-    }
-
-    :where(button) {
-      appearance: none;
-      padding: 0.5rem 1rem;
-      background-color: var(--color-blue-100);
-      border: 1px solid var(--color-blue-700);
-      border-radius: 0;
-      cursor: pointer;
-
-      &[aria-pressed='true'] {
-        background-color: var(--color-blue-500);
-      }
+    :where(img) {
+      height: 48px;
     }
   }
 </style>
